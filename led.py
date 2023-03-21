@@ -16,8 +16,15 @@ def flash(blinks=5, ms=500, pin=18):
     print("LED off")
     time.sleep(ms)
 
+def double_flash():
+  
+  for i in range(10): 
+    flash(blinks=1, ms=500, pin=18)
+    flash(blinks=1, ms=500, pin=23)
+  
   
   
 if __name__ == '__main__':
     import sys
-    flash(*sys.argv[1:])
+    #flash(*sys.argv[1:])
+    double_flash()
