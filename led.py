@@ -26,5 +26,5 @@ def double_flash():
   
 if __name__ == '__main__':
     import sys
-    #flash(*sys.argv[1:])
-    double_flash()
+    flash(*sys.argv[1:])
+ 
