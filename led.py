@@ -15,4 +15,4 @@ def flash(blinks=10, speed=1):
 
 if __name__ == '__main__':
     import sys
-    flash(*sys.argv[1:])
+    flash(int(sys.argv[1]), int(sys.argv[2]))
