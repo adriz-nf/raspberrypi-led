@@ -5,11 +5,12 @@ import time
 GPIO.setmode(GPIO.BCM)
 GPIO.setwarnings(False)
 blinks = 10
+speed = .1
 for i in range(1,blinks):
   GPIO.setup(18,GPIO.OUT)
   print(f"LED on. {i} of {blinks}")
   GPIO.output(18,GPIO.HIGH)
-  time.sleep(1)
+  time.sleep(speed)
   GPIO.output(18,GPIO.LOW)
   print("LED off")
-  time.sleep(1)
+  time.sleep(speed)
