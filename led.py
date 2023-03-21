@@ -4,7 +4,7 @@ def flash(blinks=5, ms=500):
   import time
   GPIO.setmode(GPIO.BCM)
   GPIO.setwarnings(False)
-  for i in range(1,blinks):
+  for i in range(1,blinks+1):
     GPIO.setup(18,GPIO.OUT)
     print(f"LED on. {i} of {blinks}")
     GPIO.output(18,GPIO.HIGH)
