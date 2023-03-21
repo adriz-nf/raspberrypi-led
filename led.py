@@ -10,5 +10,6 @@ for i in range(1,blinks):
   print(f"LED on. {i} of {blinks}")
   GPIO.output(18,GPIO.HIGH)
   time.sleep(1)
-  print("LED off")
   GPIO.output(18,GPIO.LOW)
+  print("LED off")
+  time.sleep(1)
